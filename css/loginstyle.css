@@ -1,0 +1,132 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота экрана */
+}
+
+/* Контейнер для формы */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем все элементы внутри контейнера */
+    box-sizing: border-box; /* Чтобы padding учитывался в общей ширине */
+}
+
+/* Заголовок формы */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center; /* Центрируем текст заголовка */
+}
+
+/* Группа для полей ввода */
+.input-group {
+    margin-bottom: 20px;
+    width: 100%; /* Чтобы поля ввода растягивались на всю ширину контейнера */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы */
+}
+
+/* Лейблы для полей ввода */
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    text-align: center; /* Центрируем текст лейбла */
+}
+
+/* Поля для ввода */
+input {
+    width: 100%; /* Поля теперь занимают всю ширину контейнера */
+    max-width: 350px; /* Ограничиваем максимальную ширину полей */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-bottom: 15px; /* Отступ снизу для поля ввода */
+}
+
+input:focus {
+    border-color: #4caf50;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Кнопка отправки */
+button {
+    width: 100%; /* Кнопка теперь растягивается на всю ширину */
+    max-width: 350px; /* Ограничиваем максимальную ширину кнопки */
+    padding: 15px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Отступ сверху */
+}
+
+button:hover {
+    background-color: #45a049;
+    text-align: center;
+}
+
+button:active {
+    background-color: #388e3c;
+    text-align: center;
+}
+
+/* Сообщения об ошибке */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Ссылки для навигации */
+a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+}

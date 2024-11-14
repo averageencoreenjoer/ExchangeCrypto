@@ -104,8 +104,9 @@ input, select, button {
       flex-direction: column;
       align-items: stretch;
   }
-
+  
   label, select, input {
       margin-bottom: 10px;
   }
 }
+
