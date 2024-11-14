@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Crypto Exchange</h2>
+
+        <!-- Выбор криптовалюты и ввод количества -->
+        <div class="input-group">
+            <label for="from-currency">From (Crypto):</label>
+            <select id="from-currency">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="USDT">Tether (USDT)</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount" min="0">
+        </div>
+
+        <!-- Выбор фиатной валюты и вывод конвертированной суммы -->
+        <div class="input-group">
+            <label for="to-currency">To (Fiat):</label>
+            <select id="to-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <input type="text" id="converted-amount" placeholder="Converted Amount" readonly>
+        </div>
+
+        <!-- Кнопка обмена -->
+        <button id="exchange-btn">Exchange</button>
+
+        <!-- Вывод результата -->
+        <p id="result"></p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

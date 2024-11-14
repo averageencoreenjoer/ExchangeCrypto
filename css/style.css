@@ -1,0 +1,111 @@
+/* Основной контейнер */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Заголовок */
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Группа для ввода данных (выбор валюты и количество) */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Метки для полей ввода */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  flex: 1;
+  text-align: left;
+  margin-right: 15px;
+}
+
+/* Поля для ввода данных и выбора */
+select, input {
+  flex: 2;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+select:focus, input:focus {
+  border-color: #4caf50;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* Кнопка обмена */
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+/* Вывод результата */
+#result {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Стили для поля с конвертированной суммой (только для чтения) */
+#converted-amount {
+  background-color: #e8f5e9;
+  color: #388e3c;
+  cursor: not-allowed;
+  border: 2px solid #388e3c;
+  font-weight: bold;
+}
+
+/* Общие стили для всех элементов */
+input, select, button {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+  .input-group {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  label, select, input {
+      margin-bottom: 10px;
+  }
+}
